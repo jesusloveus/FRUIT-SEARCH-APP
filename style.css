@@ -1,0 +1,76 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e04c4c, #e40909);
+    /* Background gradient */
+    color: #18d81e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Heading Styling */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(38, 183, 99);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+}
+
+#fruitInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #411565;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+#fruitInput:focus {
+    border-color: #f57579;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Styling */
+#dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(231, 8, 123);
+    border: 1px solid #0e8bde;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dropdown li:hover,
+#dropdown .highlight {
+    background-color: #24ad76;
+    color: rgb(98, 17, 248);
+}
